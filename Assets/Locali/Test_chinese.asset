@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Test_chinese
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: zh-Hans
+  m_SharedData: {fileID: 11400000, guid: 77ad928528ecd4b4c8a98a319186d8a5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16400498688
+    m_Localized: "\r\u8F9E\u804C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2211065872384
+    m_Localized: "\u9009\u62E9\u96BE\u5EA6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5384140734464
+    m_Localized: "\u73A9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11215448031232
+    m_Localized: "As\xED que has llegado hasta aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11245806403584
+    m_Localized: "S\xED, y esta vez no fallar\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11362408054784
+    m_Localized: "\xA1Estoy aqu\xED para pararte los pies!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11373447462912
+    m_Localized: "Atr\xE9vete si puedes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11386231701504
+    m_Localized: "\xBFYa cansada?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11395731800064
+    m_Localized: Eres fuerte para ser una come-plantas...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11409350705152
+    m_Localized: "\xA1A ver c\xF3mo sobrevives a ESTO!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11423951077376
+    m_Localized: "\xA1Esto a\xFAn no ha acabado!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11435489607680
+    m_Localized: "Aqu\xED viene mi mejor ataque."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11460223418368
+    m_Localized: "As\xED que... as\xED ha sido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11476862222336
+    m_Localized: Has hecho bien... Pero esto no es el final...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11492699914240
+    m_Localized: aa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49236050427904
+    m_Localized: ss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970001969152
+    m_Localized: "\u8BED\u8A00"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58344505851904
+    m_Localized: "\u7B80\u5355\u7684"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58383303163904
+    m_Localized: "\u4E2D\u7B49\u7684"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58468862771200
+    m_Localized: "\u6781\u7AEF\u7D20\u98DF\u4E3B\u4E49\u8005"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61347233251328
+    m_Localized: "\u540E\u9000"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62041709330432
+    m_Localized: "\u4E2D\u56FD\u4EBA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62196319764480
+    m_Localized: "\u897F\u73ED\u7259\u8BED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62331913224192
+    m_Localized: "\u82F1\u8BED"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

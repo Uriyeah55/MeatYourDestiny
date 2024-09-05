@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Test Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Test
+  m_TableCollectionNameGuidString: 77ad928528ecd4b4c8a98a319186d8a5
+  m_Entries:
+  - m_Id: 16400498688
+    m_Key: QuitK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2211065872384
+    m_Key: DifK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5384140734464
+    m_Key: PlayK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11215448031232
+    m_Key: dialog_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11245806403584
+    m_Key: dialog_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11362408054784
+    m_Key: dialog_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11373447462912
+    m_Key: dialog_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11386231701504
+    m_Key: dialog_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11395731800064
+    m_Key: dialog_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11409350705152
+    m_Key: dialog_6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11423951077376
+    m_Key: dialog_7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11435489607680
+    m_Key: dialog_8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11460223418368
+    m_Key: dialog_9
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11476862222336
+    m_Key: dialog_10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11492699914240
+    m_Key: dialog_11
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49236050427904
+    m_Key: dialog_12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49259769217024
+    m_Key: dialog_13
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53970001969152
+    m_Key: LangK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58344505851904
+    m_Key: easyK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58383303163904
+    m_Key: mediumK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58468862771200
+    m_Key: hardK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 61347233251328
+    m_Key: BackK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62041709330432
+    m_Key: chineseK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62196319764480
+    m_Key: spanishK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 62331913224192
+    m_Key: englishK
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1403335387819016216
+  references:
+    version: 2
+    RefIds:
+    - rid: 1403335387819016216
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1725482618934
