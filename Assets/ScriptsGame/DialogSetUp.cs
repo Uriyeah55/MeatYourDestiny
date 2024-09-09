@@ -8,7 +8,7 @@ using UnityEngine.Localization.Components;
 
 public class DialogSetUp : MonoBehaviour
 {
-    public GameObject dialogPanel, vegPortrait, meatPortrait, enemy, player;
+    public GameObject dialogPanel, vegPortrait, meatPortrait, enemy, player,audioPhase1,audioPhase2,audioPhase3;
     public TMP_Text clickContinue, dialegText;
     public LocalizeStringEvent textDialog;  // Use LocalizeStringEvent instead of TMP_Text for localization
     public bool dialogueOnCourse;
@@ -117,6 +117,8 @@ public class DialogSetUp : MonoBehaviour
 
             case 8:
                 // FASE 2
+                audioPhase2.SetActive(true);
+                audioPhase1.SetActive(false);
                 player.SetActive(true);
 
                 player.transform.position = new Vector3(Xposicio, yposicio, 0);
@@ -146,7 +148,10 @@ public class DialogSetUp : MonoBehaviour
 
             case 11:
                 // FASE 3
+                audioPhase2.SetActive(false);
+                audioPhase3.SetActive(true);
                 hidePortraitsAndPanel();
+                player.SetActive(true);
                 allowPlayerShootAndMovement();
                 changeEnemyPhase(3);
                 dialogueOnCourse = false;

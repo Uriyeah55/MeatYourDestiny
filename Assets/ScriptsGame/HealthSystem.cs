@@ -25,6 +25,8 @@ public class HealthSystem : MonoBehaviour
         {
             maxHealth=1500;
         }
+        Debug.Log ("max health after difficultuy choose: " + maxHealth);
+
         currentHealth = maxHealth;  // Initialize current health to maximum health
         UpdateHealthBar();  // Update the health bar to reflect the initial health
     }

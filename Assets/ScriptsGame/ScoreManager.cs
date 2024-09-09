@@ -21,7 +21,10 @@ public class ScoreManager : MonoBehaviour
     {
         scoreT.text = "Score: " + totalScore;
         UpdateRanking();
-        rankT.text = "Rank: " + currentRanking;
+        rankT.text =currentRanking;
+        //track and save rank
+        PlayerPrefs.SetString("MaxRank", currentRanking);
+
     }
 
     void UpdateRanking()
