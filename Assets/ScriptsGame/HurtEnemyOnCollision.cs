@@ -8,7 +8,7 @@ public class HurtEnemyOnCollision : MonoBehaviour
     public GameObject manager;
     private UbhBullet bullet; // Reference to the UbhBullet component
         public HealthSystem healthSystem;
-        public float damage=10f;
+        public float damage=1f;
 
     private void Start()
     {

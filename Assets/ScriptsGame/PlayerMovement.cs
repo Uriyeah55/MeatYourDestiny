@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float screenHalfHeight;  // Half of the screen height
 
+    private bool canMove = true;     // New flag to control movement
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();  // Get Rigidbody2D component
@@ -29,34 +31,43 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // Get input from user
-        float moveX = Input.GetAxis("Horizontal"); // A/D or Left/Right Arrow
-        float moveY = Input.GetAxis("Vertical");   // W/S or Up/Down Arrow
-
-        // Reset movement flags if no input is detected
-        if (moveX == 0) { canMoveLeft = canMoveRight = true; }
-        if (moveY == 0) { canMoveUp = canMoveDown = true; }
-
-        // Determine if we can move in each direction
-        if ((moveX < 0 && canMoveLeft) || (moveX > 0 && canMoveRight))
+        // Only process input if movement is allowed
+        if (canMove)
         {
-            movement.x = moveX;
+            // Get input from user
+            float moveX = Input.GetAxis("Horizontal"); // A/D or Left/Right Arrow
+            float moveY = Input.GetAxis("Vertical");   // W/S or Up/Down Arrow
+
+            // Reset movement flags if no input is detected
+            if (moveX == 0) { canMoveLeft = canMoveRight = true; }
+            if (moveY == 0) { canMoveUp = canMoveDown = true; }
+
+            // Determine if we can move in each direction
+            if ((moveX < 0 && canMoveLeft) || (moveX > 0 && canMoveRight))
+            {
+                movement.x = moveX;
+            }
+            else
+            {
+                movement.x = 0;
+            }
+
+            // Limit upward movement to half of the screen height plus offset
+            float newYPosition = transform.position.y + moveY * moveSpeed * Time.deltaTime;
+            float maxYPosition = screenHalfHeight - topOffset;  // Adjusted max Y position with topOffset
+            if (newYPosition <= maxYPosition && ((moveY < 0 && canMoveDown) || (moveY > 0 && canMoveUp)))
+            {
+                movement.y = moveY;
+            }
+            else
+            {
+                movement.y = 0;
+            }
         }
         else
         {
-            movement.x = 0;
-        }
-
-        // Limit upward movement to half of the screen height plus offset
-        float newYPosition = transform.position.y + moveY * moveSpeed * Time.deltaTime;
-        float maxYPosition = screenHalfHeight - topOffset;  // Adjusted max Y position with topOffset
-        if (newYPosition <= maxYPosition && ((moveY < 0 && canMoveDown) || (moveY > 0 && canMoveUp)))
-        {
-            movement.y = moveY;
-        }
-        else
-        {
-            movement.y = 0;
+            // If movement is disabled, set velocity to zero
+            movement = Vector2.zero;
         }
     }
 
@@ -64,6 +75,17 @@ public class PlayerMovement : MonoBehaviour
     {
         // Move the ship using Rigidbody2D
         rb.velocity = movement * moveSpeed;
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;   // Disable movement
+        rb.velocity = Vector2.zero;  // Reset velocity to zero immediately
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;    // Enable movement
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

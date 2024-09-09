@@ -51,15 +51,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11395731800064
-    m_Localized: Eres fuerte para ser una come-plantas...
+    m_Localized: Eres fuerte para ser una come-plantas.
     m_Metadata:
       m_Items: []
   - m_Id: 11409350705152
-    m_Localized: "\xA1A ver c\xF3mo sobrevives a ESTO!"
+    m_Localized: Pero...
     m_Metadata:
       m_Items: []
   - m_Id: 11423951077376
-    m_Localized: "\xA1Esto a\xFAn no ha acabado!"
+    m_Localized: "\xA1A ver c\xF3mo sobrevives a ESTO!"
     m_Metadata:
       m_Items: []
   - m_Id: 11435489607680
@@ -67,19 +67,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11460223418368
-    m_Localized: "As\xED que... as\xED ha sido."
+    m_Localized: Afgh...
     m_Metadata:
       m_Items: []
   - m_Id: 11476862222336
-    m_Localized: Has hecho bien... Pero esto no es el final...
+    m_Localized: "Has hecho bien... Pero esto no es el final...\nNO ME RENDIR\xC9"
     m_Metadata:
       m_Items: []
   - m_Id: 11492699914240
-    m_Localized: aa
+    m_Localized: Mi vida, mi reino, mi legado...
     m_Metadata:
       m_Items: []
   - m_Id: 49236050427904
-    m_Localized: ss
+    m_Localized: "La Orden C\xE1rnica no olvidar\xE1 esto. Y yo... tampoco. Buena
+      suerte, nueva reina de la Pir\xE1mide Alimenticia."
     m_Metadata:
       m_Items: []
   - m_Id: 53970001969152

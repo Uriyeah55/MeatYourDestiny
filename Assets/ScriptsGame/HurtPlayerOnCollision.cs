@@ -9,11 +9,13 @@ public class HurtPlayerOnCollision : MonoBehaviour
     public UbhObjectPool pool; // Reference to the object pool (should be assigned in the inspector)
 
     private UbhBullet bullet; // Reference to the UbhBullet component
-    public GameObject manager;
+    public GameObject manager,audioHurtManager;
 
     private void Start()
     {
         manager=GameObject.Find("MANAGER");
+        audioHurtManager=GameObject.Find("PlayerHurtManager");
+
 
         pool=GameObject.Find("Pool").GetComponent<UbhObjectPool>();
         // Get the UbhBullet component from the same GameObject
@@ -36,6 +38,7 @@ public class HurtPlayerOnCollision : MonoBehaviour
         // If the bullet collides with an object tagged "Limit"
         if (other.CompareTag("Player"))
         {
+            audioHurtManager.GetComponent<AudioSource>().Play();
             manager.GetComponent<ScoreManager>().totalScore-=10;
             if(manager.GetComponent<ScoreManager>().totalScore<0)
             {

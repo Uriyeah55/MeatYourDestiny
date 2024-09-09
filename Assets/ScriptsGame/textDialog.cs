@@ -5,7 +5,7 @@ using TMPro;
 
 public class textDialog : MonoBehaviour
 {
-        public TMP_Text textdialog;
+    public TMP_Text textdialog;
     public GameObject enemy,manager;
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,6 @@ public class textDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    textdialog.text="Dialeg: " + manager.GetComponent<DialogSetUp>().dialogState.ToString();
+        textdialog.text="Dialeg: " + manager.GetComponent<DialogSetUp>().dialogState.ToString();
     }
 }

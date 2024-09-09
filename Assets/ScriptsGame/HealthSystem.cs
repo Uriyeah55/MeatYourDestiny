@@ -1,16 +1,36 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class HealthSystem : MonoBehaviour
 {
     public Slider healthBar;  // Reference to the UI Slider
-    public float maxHealth = 500f;  // Maximum health value
+    public float maxHealth;  // Maximum health value
     public float currentHealth;  // Current health value
+    public TMP_Text hpText;
+    private int currentDifficulty;
 
     void Start()
     {
+        currentDifficulty = PlayerPrefs.GetInt("difficulty", 0);
+        if(currentDifficulty==0)
+        {
+            maxHealth=500;
+        }
+        else if(currentDifficulty==1)
+        {
+            maxHealth=800;
+        }
+        else if(currentDifficulty==2)
+        {
+            maxHealth=1500;
+        }
         currentHealth = maxHealth;  // Initialize current health to maximum health
         UpdateHealthBar();  // Update the health bar to reflect the initial health
+    }
+    void Update(){
+        hpText.text=currentHealth.ToString();
+        Debug.Log ("HP: " + currentHealth);
     }
 
     // Method to take damage

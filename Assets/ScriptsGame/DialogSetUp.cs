@@ -9,7 +9,7 @@ using UnityEngine.Localization.Components;
 public class DialogSetUp : MonoBehaviour
 {
     public GameObject dialogPanel, vegPortrait, meatPortrait, enemy, player;
-    public TMP_Text clickContinue;
+    public TMP_Text clickContinue, dialegText;
     public LocalizeStringEvent textDialog;  // Use LocalizeStringEvent instead of TMP_Text for localization
     public bool dialogueOnCourse;
     public UbhObjectPool pool;
@@ -42,13 +42,14 @@ public class DialogSetUp : MonoBehaviour
     }
 
     // Method to switch dialogues
-    void SwitchDialog()
+    public void SwitchDialog()
     {
         dialogState++;  // Move to the next dialog state
 
         switch (dialogState)
         {
             case 0:
+                player.SetActive(false);
                 player.transform.position = new Vector3(Xposicio, yposicio, 0);
                 dialogPanel.SetActive(true);
                 vegPortrait.SetActive(false);
@@ -71,6 +72,8 @@ public class DialogSetUp : MonoBehaviour
                 break;
 
             case 3:
+                player.SetActive(false);
+
                 dialogPanel.SetActive(true);
                 vegPortrait.SetActive(false);
                 meatPortrait.SetActive(true);
@@ -79,6 +82,7 @@ public class DialogSetUp : MonoBehaviour
 
             case 4:
                 // FASE 1
+                player.SetActive(true);
                 hidePortraitsAndPanel();
                 changeEnemyPhase(1);
                 allowPlayerShootAndMovement();
@@ -87,12 +91,15 @@ public class DialogSetUp : MonoBehaviour
                 break;
 
             case 5:
+                
+                player.SetActive(false);
+
                 clickContinue.enabled = false;
                 enemy.GetComponent<UbhShotCtrl>().StopShotRoutineAndPlayingShot();
                 pool.ReleaseAllBullet();
                 dialogPanel.SetActive(true);
-                vegPortrait.SetActive(true);
-                meatPortrait.SetActive(false);
+                vegPortrait.SetActive(false);
+                meatPortrait.SetActive(true);
                 SetLocalizedText("dialog_5");
                 break;
 
@@ -110,6 +117,9 @@ public class DialogSetUp : MonoBehaviour
 
             case 8:
                 // FASE 2
+                player.SetActive(true);
+
+                player.transform.position = new Vector3(Xposicio, yposicio, 0);
                 hidePortraitsAndPanel();
                 changeEnemyPhase(2);
                 allowPlayerShootAndMovement();
@@ -117,12 +127,15 @@ public class DialogSetUp : MonoBehaviour
                 break;
 
             case 9:
-                pool.ReleaseAllBullet();
-                dialogPanel.SetActive(true);
-                vegPortrait.SetActive(false);
-                meatPortrait.SetActive(true);
-                SetLocalizedText("dialog_9");
-                break;
+            changeEnemyPhase(0);
+            enemy.GetComponent<UbhShotCtrl>().StopShotRoutineAndPlayingShot();
+            pool.ReleaseAllBullet();
+            player.SetActive(false);
+            dialogPanel.SetActive(true);
+            vegPortrait.SetActive(false);
+            meatPortrait.SetActive(true);
+            SetLocalizedText("dialog_9");
+            break;
 
             case 10:
                 dialogPanel.SetActive(true);
@@ -132,6 +145,7 @@ public class DialogSetUp : MonoBehaviour
                 break;
 
             case 11:
+                // FASE 3
                 hidePortraitsAndPanel();
                 allowPlayerShootAndMovement();
                 changeEnemyPhase(3);
@@ -139,20 +153,21 @@ public class DialogSetUp : MonoBehaviour
                 break;
 
             case 12:
+                player.SetActive(false);
                 pool.ReleaseAllBullet();
                 changeEnemyPhase(0);
                 enemy.GetComponent<UbhShotCtrl>().StopShotRoutineAndPlayingShot();
                 dialogPanel.SetActive(true);
                 vegPortrait.SetActive(false);
                 meatPortrait.SetActive(true);
-                SetLocalizedText("dialog_12");
+                SetLocalizedText("dialog_11");
                 break;
 
             case 13:
                 dialogPanel.SetActive(true);
                 vegPortrait.SetActive(false);
                 meatPortrait.SetActive(true);
-                SetLocalizedText("dialog_13");
+                SetLocalizedText("dialog_12");
                 break;
 
             case 14:
@@ -173,15 +188,24 @@ public class DialogSetUp : MonoBehaviour
         meatPortrait.SetActive(false);
     }
 
-    void allowPlayerShootAndMovement()
+void allowPlayerShootAndMovement()
+{
+    PlayerLimitations playerLimitations = GetComponent<PlayerLimitations>();
+    if (playerLimitations != null)
     {
-        GetComponent<PlayerLimitations>().enablePlayerMovement();
-        GetComponent<PlayerLimitations>().enablePlayerShooting();
+        playerLimitations.enablePlayerMovement();
+        playerLimitations.enablePlayerShooting();
     }
+    else
+    {
+        Debug.LogError("PlayerLimitations component is missing on " + gameObject.name);
+    }
+}
+
 
     void disablePlayerShootAndMovement()
     {
-        GetComponent<PlayerLimitations>().disablePlayerMovement();
+        GetComponent<PlayerMovement>().DisableMovement();
         GetComponent<PlayerLimitations>().disablePlayerShooting();
     }
 
