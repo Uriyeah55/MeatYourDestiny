@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 16400498688
-    m_Localized: "\r\u8F9E\u804C"
+    m_Localized: "\u9000\u51FA"
     m_Metadata:
       m_Items: []
   - m_Id: 2211065872384
@@ -27,15 +27,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5384140734464
-    m_Localized: "\u73A9"
+    m_Localized: "\u5F00\u59CB"
     m_Metadata:
       m_Items: []
   - m_Id: 11215448031232
-    m_Localized: "As\xED que has llegado hasta aqu\xED."
+    m_Localized: "\u6240\u4EE5\uFF0C\u4F60\u8FD8\u662F\u5230\u8FD9\u91CC\u4E86\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 11245806403584
-    m_Localized: "S\xED, y esta vez no fallar\xE9."
+    m_Localized: "\u662F\u7684\uFF0C\u8FD9\u6B21\u6211\u7EDD\u4E0D\u4F1A\u5931\u8D25\uFF01"
     m_Metadata:
       m_Items: []
   - m_Id: 11362408054784
@@ -43,15 +43,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11373447462912
-    m_Localized: "Atr\xE9vete si puedes."
+    m_Localized: "\u90A3\u5C31\u6765\u8BD5\u8BD5\u554A"
     m_Metadata:
       m_Items: []
   - m_Id: 11386231701504
-    m_Localized: "\xBFYa cansada?"
+    m_Localized: "\u5DF2\u7ECF\u611F\u89C9\u75B2\u60EB\u4E86\u5417\uFF1F"
     m_Metadata:
       m_Items: []
   - m_Id: 11395731800064
-    m_Localized: Eres fuerte para ser una come-plantas.
+    m_Localized: "\u4F5C\u4E3A\u4E00\u4E2A\u4F4E\u7B49\u8005\uFF0C\u4F60\u8FD8\u633A\u5F3A\u7684\u561B..."
     m_Metadata:
       m_Items: []
   - m_Id: 11409350705152
@@ -59,11 +59,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11423951077376
-    m_Localized: "\xA1A ver c\xF3mo sobrevives a ESTO!"
+    m_Localized: "\u8FD9\u90FD\u8FD8\u6CA1\u7ED3\u675F\uFF01"
     m_Metadata:
       m_Items: []
   - m_Id: 11435489607680
-    m_Localized: "Aqu\xED viene mi mejor ataque."
+    m_Localized: "\u51C6\u5907\u597D\u8FCE\u63A5\u6700\u540E\u4E00\u4E2A\u5427\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 11460223418368
@@ -71,7 +71,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11476862222336
-    m_Localized: "Has hecho bien... Pero esto no es el final...\nNO ME RENDIR\xC9"
+    m_Localized: "\u4F60\u505A\u7684\u5F88\u597D\uFF0C\u4F46\u8FD9...\u53EF\u4E0D\u662F\u7ED3\u675F....."
     m_Metadata:
       m_Items: []
   - m_Id: 11492699914240
@@ -92,11 +92,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 58383303163904
-    m_Localized: "\u4E2D\u7B49\u7684"
+    m_Localized: "\u4E2D\u7B49"
     m_Metadata:
       m_Items: []
   - m_Id: 58468862771200
-    m_Localized: "\u6781\u7AEF\u7D20\u98DF\u4E3B\u4E49\u8005"
+    m_Localized: "\u6781\u5EA6\u56F0\u96BE"
     m_Metadata:
       m_Items: []
   - m_Id: 61347233251328
@@ -104,7 +104,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 62041709330432
-    m_Localized: "\u4E2D\u56FD\u4EBA"
+    m_Localized: "\u4E2D\u6587"
     m_Metadata:
       m_Items: []
   - m_Id: 62196319764480
@@ -113,6 +113,26 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 62331913224192
     m_Localized: "\u82F1\u8BED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090302219993088
+    m_Localized: "\u52A0\u6CF0\u7F57\u5C3C\u4E9A\u8BED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090396369534976
+    m_Localized: "\u611F\u8C22\u6E38\u73A9 :)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090509884178432
+    m_Localized: "\u5E0C\u671B\u4F60\u6E38\u73A9\u7684\u5F00\u5FC3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090640041820160
+    m_Localized: "\u6392\u884C\u699C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090749597040640
+    m_Localized: "\u9000\u51FA\u6E38\u620F"
     m_Metadata:
       m_Items: []
   references:

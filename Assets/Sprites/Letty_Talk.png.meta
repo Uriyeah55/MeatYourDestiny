@@ -128,11 +128,11 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 737
+        width: 800
         height: 1000
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 102, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -147,13 +147,13 @@ TextureImporter:
       name: Letty_Talk_1
       rect:
         serializedVersion: 2
-        x: 825
+        x: 800
         y: 0
-        width: 814
+        width: 800
         height: 1000
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 79, y: 0, z: 100, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -168,13 +168,13 @@ TextureImporter:
       name: Letty_Talk_2
       rect:
         serializedVersion: 2
-        x: 1579
+        x: 1600
         y: 0
-        width: 814
+        width: 800
         height: 1000
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 109, y: 0, z: 49, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -189,13 +189,13 @@ TextureImporter:
       name: Letty_Talk_3
       rect:
         serializedVersion: 2
-        x: 2417
+        x: 2400
         y: 0
-        width: 713
+        width: 800
         height: 1000
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 86, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0

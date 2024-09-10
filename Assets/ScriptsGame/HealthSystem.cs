@@ -5,34 +5,49 @@ using TMPro;
 public class HealthSystem : MonoBehaviour
 {
     public Slider healthBar;  // Reference to the UI Slider
-    public float maxHealth;  // Maximum health value
+    [SerializeField] public float maxHealth;  // Default maxHealth value; can be adjusted
     public float currentHealth;  // Current health value
     public TMP_Text hpText;
     private int currentDifficulty;
+    private bool initialized = false; // Flag to ensure initialization is done only once
 
     void Start()
     {
-        currentDifficulty = PlayerPrefs.GetInt("difficulty", 0);
-        if(currentDifficulty==0)
-        {
-            maxHealth=500;
-        }
-        else if(currentDifficulty==1)
-        {
-            maxHealth=800;
-        }
-        else if(currentDifficulty==2)
-        {
-            maxHealth=1500;
-        }
-        Debug.Log ("max health after difficultuy choose: " + maxHealth);
-
+        InitializeHealth();  // Initialize maxHealth based on difficulty
         currentHealth = maxHealth;  // Initialize current health to maximum health
         UpdateHealthBar();  // Update the health bar to reflect the initial health
     }
-    void Update(){
-        hpText.text=currentHealth.ToString();
-        Debug.Log ("HP: " + currentHealth);
+
+    // Method to initialize health based on difficulty
+    private void InitializeHealth()
+    {
+        if (initialized) return; // Prevent multiple initializations
+
+        currentDifficulty = PlayerPrefs.GetInt("difficulty", 0);
+        Debug.Log("Difficulty check: " + currentDifficulty);
+
+        // Set maxHealth based on the difficulty level
+        if (currentDifficulty == 1)
+        {
+            maxHealth = 1000f;
+        }
+        else if (currentDifficulty == 2)
+        {
+            maxHealth = 1300f;
+        }
+        else if (currentDifficulty == 3)
+        {
+            maxHealth = 2000f;
+        }
+
+        initialized = true; // Mark as initialized
+        Debug.Log("Max health after difficulty choice: " + maxHealth);
+    }
+
+    void Update()
+    {
+        hpText.text = currentHealth.ToString();
+        Debug.Log("HP: " + currentHealth);
     }
 
     // Method to take damage

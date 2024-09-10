@@ -33,13 +33,13 @@ public class FightCourse : MonoBehaviour
         }
 
         // Check if health is less than or equal to 200 and the second phase hasn't been triggered yet
-        if (healthSystem.currentHealth <= healthSystem.maxHealth * 0.50 && !phase2Triggered)
+        if (healthSystem.currentHealth <= healthSystem.maxHealth * 0.60 && !phase2Triggered)
         {
             phase2Triggered = true;  // Set the flag to true to prevent future triggers
             TriggerPhaseTransition(2);  // Call the method to handle the second phase transition
         }
                 // Check if health is less than or equal to 200 and the second phase hasn't been triggered yet
-        if (healthSystem.currentHealth <= healthSystem.maxHealth * 0.25 && !phase3Triggered)
+        if (healthSystem.currentHealth <= healthSystem.maxHealth * 0.35 && !phase3Triggered)
         {
             phase3Triggered = true;  // Set the flag to true to prevent future triggers
             TriggerPhaseTransition(3);  // Call the method to handle the second phase transition

@@ -115,6 +115,26 @@ MonoBehaviour:
     m_Localized: "Ingl\xE9s"
     m_Metadata:
       m_Items: []
+  - m_Id: 2090302219993088
+    m_Localized: "Catal\xE1n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090396369534976
+    m_Localized: Gracias por jugar :)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090509884178432
+    m_Localized: Esperemos que te lo hayas pasado bien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090640041820160
+    m_Localized: Rango
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090749597040640
+    m_Localized: Salir del juego
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

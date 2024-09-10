@@ -114,6 +114,26 @@ MonoBehaviour:
     m_Localized: English
     m_Metadata:
       m_Items: []
+  - m_Id: 2090302219993088
+    m_Localized: Catalan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090396369534976
+    m_Localized: Thanks for playing :)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090509884178432
+    m_Localized: Hope you had fun
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090640041820160
+    m_Localized: Ranking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2090749597040640
+    m_Localized: Quit game
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

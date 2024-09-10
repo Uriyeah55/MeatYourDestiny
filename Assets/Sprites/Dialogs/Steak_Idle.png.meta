@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3a6738ba28127614491d9fb33242854a
+guid: eb2c099736548004199c7e08174c9e60
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Letty_IdleEyes_0
+      name: Steak_Idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 1000
+        width: 950
+        height: 1100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17d1b9673a5b26d4899ec05ec414390d
-      internalID: -484601526
+      spriteID: c315bf8609e01f140beca53fed9963ba
+      internalID: 1235252338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Letty_IdleEyes_1
+      name: Steak_Idle_1
       rect:
         serializedVersion: 2
-        x: 800
+        x: 950
         y: 0
-        width: 800
-        height: 1000
+        width: 950
+        height: 1100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a20eabf3dd27d084ea16e19ae11067d4
-      internalID: -2073420633
+      spriteID: e4eae148a5f090d48b8a60a95a146f1f
+      internalID: -146098031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Letty_IdleEyes_2
+      name: Steak_Idle_2
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1900
         y: 0
-        width: 800
-        height: 1000
+        width: 950
+        height: 1100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca342b8f371f5241b490b8ca280bc4e
-      internalID: 2084027796
+      spriteID: 8e2b916d216e935489fba59ca4c242d3
+      internalID: -409887672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Letty_IdleEyes_3
+      name: Steak_Idle_3
       rect:
         serializedVersion: 2
-        x: 2400
+        x: 2850
         y: 0
-        width: 800
-        height: 1000
+        width: 950
+        height: 1100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ded4d8d94b63a84409881d97a8a786c2
-      internalID: 1537975167
+      spriteID: a6ec0ecf1fb634c469395843c65ff11f
+      internalID: 2143279105
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Letty_IdleEyes_0: -484601526
-      Letty_IdleEyes_1: -2073420633
-      Letty_IdleEyes_2: 2084027796
-      Letty_IdleEyes_3: 1537975167
+      Steak_Idle_0: 1235252338
+      Steak_Idle_1: -146098031
+      Steak_Idle_2: -409887672
+      Steak_Idle_3: 2143279105
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

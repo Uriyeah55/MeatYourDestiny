@@ -128,7 +128,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 870
+        width: 900
         height: 1300
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: Nave_Letty_Anim_1
       rect:
         serializedVersion: 2
-        x: 883
+        x: 900
         y: 0
-        width: 883
-        height: 1295
+        width: 900
+        height: 1300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,9 +168,9 @@ TextureImporter:
       name: Nave_Letty_Anim_2
       rect:
         serializedVersion: 2
-        x: 1766
+        x: 1800
         y: 0
-        width: 942
+        width: 900
         height: 1300
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -189,9 +189,9 @@ TextureImporter:
       name: Nave_Letty_Anim_3
       rect:
         serializedVersion: 2
-        x: 2728
+        x: 2700
         y: 0
-        width: 872
+        width: 900
         height: 1300
       alignment: 0
       pivot: {x: 0, y: 0}

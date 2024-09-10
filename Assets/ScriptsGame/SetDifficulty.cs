@@ -19,11 +19,15 @@ public class SetDifficulty : MonoBehaviour
     }
     public void setEasyDifficulty(){
             PlayerPrefs.SetInt("difficulty", 1);
+            Debug.Log("difficulty set to" + PlayerPrefs.GetInt("difficulty", 0));
     }
         public void setMediumDifficulty(){
             PlayerPrefs.SetInt("difficulty", 2);
+            Debug.Log("difficulty set to" + PlayerPrefs.GetInt("difficulty", 0));
+
     }
         public void setHardDifficulty(){
             PlayerPrefs.SetInt("difficulty", 3);
+            Debug.Log("difficulty set to" + PlayerPrefs.GetInt("difficulty", 0));
     }
 }
