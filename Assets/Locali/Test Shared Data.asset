@@ -135,6 +135,10 @@ MonoBehaviour:
     m_Key: New Entry
     m_Metadata:
       m_Items: []
+  - m_Id: 2096797347201024
+    m_Key: scoreK
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

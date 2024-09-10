@@ -75,11 +75,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11492699914240
-    m_Localized: My life, mi kingdom, my legacy...
+    m_Localized: My life, my kingdom, my legacy...
     m_Metadata:
       m_Items: []
   - m_Id: 49236050427904
-    m_Localized: The Meat Order won't forget this. And I won't either...
+    m_Localized: The Meat Order won't forget this. And I won't either... Good luck,
+      new queen of the food pyramid.
     m_Metadata:
       m_Items: []
   - m_Id: 53970001969152
@@ -132,6 +133,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2090749597040640
     m_Localized: Quit game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2096797347201024
+    m_Localized: Score
     m_Metadata:
       m_Items: []
   references:

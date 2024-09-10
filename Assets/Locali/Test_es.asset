@@ -135,6 +135,10 @@ MonoBehaviour:
     m_Localized: Salir del juego
     m_Metadata:
       m_Items: []
+  - m_Id: 2096797347201024
+    m_Localized: "Puntuaci\xF3n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

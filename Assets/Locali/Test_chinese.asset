@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11409350705152
-    m_Localized: Pero...
+    m_Localized: "\u4F46....."
     m_Metadata:
       m_Items: []
   - m_Id: 11423951077376
@@ -67,7 +67,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11460223418368
-    m_Localized: Afgh...
+    m_Localized: "\u5F88\u96BE\u63A5\u53D7\uFF0C\u8FD9\u5DF2\u662F\u6211\u7684\u6781\u9650\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 11476862222336
@@ -75,12 +75,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11492699914240
-    m_Localized: Mi vida, mi reino, mi legado...
+    m_Localized: "\u6211\u7684\u751F\u6D3B, \u6211\u7684\u738B\u56FD\uFF0C \u6211\u7684\u4F20\u5947......"
     m_Metadata:
       m_Items: []
   - m_Id: 49236050427904
-    m_Localized: "La Orden C\xE1rnica no olvidar\xE1 esto. Y yo... tampoco. Buena
-      suerte, nueva reina de la Pir\xE1mide Alimenticia."
+    m_Localized: "\u8089\u98DF\u6559\u56E2\u4E0D\u4F1A\u5FD8\u8BB0\u8FD9\u4EF6\u4E8B\u2026\u2026\u6211\u4E5F\u4E0D\u4F1A\u2026\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 53970001969152
@@ -133,6 +132,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2090749597040640
     m_Localized: "\u9000\u51FA\u6E38\u620F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2096797347201024
+    m_Localized: "\u5206\u6570"
     m_Metadata:
       m_Items: []
   references:
