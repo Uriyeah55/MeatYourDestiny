@@ -43,6 +43,7 @@ public class PlayerTransformation : MonoBehaviour
         // Check if the "M" key is pressed once
         if (Input.GetKeyDown(KeyCode.M))
         {
+            GetComponent<AudioSource>().Play();
              transformEffect.Play();
             // Check the current state and switch to the other state
             if (isVegState)

@@ -18,6 +18,7 @@ public class hideBigImage : MonoBehaviour
     }
     public void hideImg(){
         BigImage.SetActive(false);
+         GetComponent<UnityEngine.UI.Image>().sprite = null;
         this.gameObject.SetActive(false);
         panelImgs.SetActive(true);
         buttoMenu.SetActive(true);
