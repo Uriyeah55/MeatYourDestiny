@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -9,22 +11,25 @@ public class ScoreManager : MonoBehaviour
 
     public int totalScore, Sscore = 1000, AScore = 800, BScore = 600, CScore = 400, DScore = 200;
     public string currentRanking = "";
+    string rankTextLocalized;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Retrieve localized text for the score key
+        rankTextLocalized = GetLocalizedText("scoreK");
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreT.text = "Score: " + totalScore;
+        // Display localized score text with the total score
+        scoreT.text = rankTextLocalized + ": " + totalScore;
         UpdateRanking();
-        rankT.text =currentRanking;
-        //track and save rank
-        PlayerPrefs.SetString("MaxRank", currentRanking);
+        rankT.text = currentRanking;
 
+        // Track and save rank
+        PlayerPrefs.SetString("MaxRank", currentRanking);
     }
 
     void UpdateRanking()
@@ -53,5 +58,11 @@ public class ScoreManager : MonoBehaviour
         {
             currentRanking = "F"; // If score is below DScore, rank is F or some default value.
         }
+    }
+
+    // Method to retrieve the localized text using the key
+    string GetLocalizedText(string key)
+    {
+        return LocalizationSettings.StringDatabase.GetLocalizedString("Test", key); // "Test" should be your String Table name
     }
 }

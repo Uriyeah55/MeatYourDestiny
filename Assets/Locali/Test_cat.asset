@@ -10,137 +10,137 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Test_en
+  m_Name: Test_cat
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: en
+    m_Code: ca
   m_SharedData: {fileID: 11400000, guid: 77ad928528ecd4b4c8a98a319186d8a5, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
   - m_Id: 16400498688
-    m_Localized: Quit
+    m_Localized: Sortir
     m_Metadata:
       m_Items: []
   - m_Id: 2211065872384
-    m_Localized: Select Difficulty
+    m_Localized: Seleccionar Dificultad
     m_Metadata:
       m_Items: []
   - m_Id: 5384140734464
-    m_Localized: Play
+    m_Localized: Jugar
     m_Metadata:
       m_Items: []
   - m_Id: 11215448031232
-    m_Localized: So, you made it here.
+    m_Localized: "De manera que has arribat fins aqu\xED."
     m_Metadata:
       m_Items: []
   - m_Id: 11245806403584
-    m_Localized: Yes, and this time I'm not going to fail.
+    m_Localized: "S\xED, i aquest cop no fallar\xE9."
     m_Metadata:
       m_Items: []
   - m_Id: 11362408054784
-    m_Localized: I'm here to stop you!
+    m_Localized: "Estic aqu\xED per a parar-te els peus!"
     m_Metadata:
       m_Items: []
   - m_Id: 11373447462912
-    m_Localized: Come and get me then.
+    m_Localized: Atreveix-te si pots.
     m_Metadata:
       m_Items: []
   - m_Id: 11386231701504
-    m_Localized: Already tired?
+    m_Localized: "Ja est\xE0s cansada?"
     m_Metadata:
       m_Items: []
   - m_Id: 11395731800064
-    m_Localized: You're strong for a low plant-eater...
+    m_Localized: Per ser una menja-plantes ets bastant forta...
     m_Metadata:
       m_Items: []
   - m_Id: 11409350705152
-    m_Localized: But...
+    m_Localized: "A veure com sobrevius a AIX\xD2!"
     m_Metadata:
       m_Items: []
   - m_Id: 11423951077376
-    m_Localized: This is not over yet!
+    m_Localized: Encara no hem acabat!
     m_Metadata:
       m_Items: []
   - m_Id: 11435489607680
-    m_Localized: Get ready for the last one.
+    m_Localized: "Molt b\xE9, aqu\xED ve el meu millor atac."
     m_Metadata:
       m_Items: []
   - m_Id: 11460223418368
-    m_Localized: Hard to accept, but this is my limit.
+    m_Localized: "Aix\xED que... aix\xF2 \xE9s tot."
     m_Metadata:
       m_Items: []
   - m_Id: 11476862222336
-    m_Localized: You did well, but this is not.. the end...
+    m_Localized: "Has lluitat b\xE9, per\xF2 aquest no \xE9s el final..."
     m_Metadata:
       m_Items: []
   - m_Id: 11492699914240
-    m_Localized: My life, my kingdom, my legacy...
+    m_Localized: La meva vida, el meu regne, el meu legat...
     m_Metadata:
       m_Items: []
   - m_Id: 49236050427904
-    m_Localized: The Meat Order won't forget this. And I won't either... Good luck,
-      new queen of the food pyramid.
+    m_Localized: "L'Ordre de la Carn no oblidar\xE0 aix\xF2... I jo tampoc. Bona
+      sort, nova reina de la pir\xE0mide aliment\xE0ria."
     m_Metadata:
       m_Items: []
   - m_Id: 53970001969152
-    m_Localized: Language
+    m_Localized: Idioma
     m_Metadata:
       m_Items: []
   - m_Id: 58344505851904
-    m_Localized: Easy
+    m_Localized: "F\xE0cil"
     m_Metadata:
       m_Items: []
   - m_Id: 58383303163904
-    m_Localized: Medium
+    m_Localized: Normal
     m_Metadata:
       m_Items: []
   - m_Id: 58468862771200
-    m_Localized: Extreme Vegan
+    m_Localized: "Veg\xE0 Extrem"
     m_Metadata:
       m_Items: []
   - m_Id: 61347233251328
-    m_Localized: Back
+    m_Localized: Retrocedir
     m_Metadata:
       m_Items: []
   - m_Id: 62041709330432
-    m_Localized: Chinese
+    m_Localized: "Xin\xE8s"
     m_Metadata:
       m_Items: []
   - m_Id: 62196319764480
-    m_Localized: Spanish
+    m_Localized: "Castell\xE0"
     m_Metadata:
       m_Items: []
   - m_Id: 62331913224192
-    m_Localized: English
+    m_Localized: "Angl\xE8s"
     m_Metadata:
       m_Items: []
   - m_Id: 2090302219993088
-    m_Localized: Catalan
+    m_Localized: "Catal\xE0"
     m_Metadata:
       m_Items: []
   - m_Id: 2090396369534976
-    m_Localized: Thanks for playing :)
+    m_Localized: "Gr\xE0cies per jugar :)"
     m_Metadata:
       m_Items: []
   - m_Id: 2090509884178432
-    m_Localized: Hope you had fun
+    m_Localized: "Esperem que t'ho hagis passat b\xE9"
     m_Metadata:
       m_Items: []
   - m_Id: 2090640041820160
-    m_Localized: Ranking
+    m_Localized: Rang
     m_Metadata:
       m_Items: []
   - m_Id: 2090749597040640
-    m_Localized: Quit game
+    m_Localized: Sortir del joc
     m_Metadata:
       m_Items: []
   - m_Id: 2096797347201024
-    m_Localized: Score
+    m_Localized: "Puntuaci\xF3"
     m_Metadata:
       m_Items: []
   - m_Id: 2213854743085056
-    m_Localized: Return to menu
+    m_Localized: "Tornar al men\xFA"
     m_Metadata:
       m_Items: []
   references:

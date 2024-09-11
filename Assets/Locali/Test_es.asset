@@ -139,6 +139,10 @@ MonoBehaviour:
     m_Localized: "Puntuaci\xF3n"
     m_Metadata:
       m_Items: []
+  - m_Id: 2213854743085056
+    m_Localized: "Volver al men\xFA"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -29,6 +29,7 @@ public class ShowHideLanguagePanel : MonoBehaviour
        difficultyPanel.SetActive(false);
     }
             public void showDifficultyPanel(){
+              //  img1.SetActive(false);
         mainPanel.SetActive(false);
         langPanel.SetActive(false);
        difficultyPanel.SetActive(true);
@@ -38,4 +39,5 @@ public class ShowHideLanguagePanel : MonoBehaviour
         langPanel.SetActive(false);
        difficultyPanel.SetActive(false);
     }
+
 }

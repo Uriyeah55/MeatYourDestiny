@@ -98,18 +98,19 @@ public class DialogSetUp : MonoBehaviour
                 break;
 
             case 5:
+                AnimatedPortraitsSteakTalking();
+
                 enemy.SetActive(false);
                 
                 player.SetActive(false);
 
-                enemy.GetComponent<UbhShotCtrl>().StopShotRoutineAndPlayingShot();
-                pool.ReleaseAllBullet();
+               // enemy.GetComponent<UbhShotCtrl>().StopShotRoutineAndPlayingShot();
+                //pool.ReleaseAllBullet();
                 dialogPanel.SetActive(true);
                 vegPortrait.SetActive(true);
-                dialogPanel.GetComponent<UnityEngine.UI.Image>().sprite = playerSprite;
+                dialogPanel.GetComponent<UnityEngine.UI.Image>().sprite = enemySprite;
 
                 meatPortrait.SetActive(true);
-                AnimatedPortraitsSteakTalking();
                 SetLocalizedText("dialog_5");
                 break;
 
