@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DisplayImageOnClick : MonoBehaviour
 {
-    public GameObject bigImg,buttonClose;
+    public GameObject bigImg,buttonClose,panelImages,buttonMenu;
     public int intPicture;
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,7 @@ public class DisplayImageOnClick : MonoBehaviour
         bigImg.SetActive(true);
         bigImg.GetComponent<picturetodisplay>().indexToShow=intPicture;
         buttonClose.SetActive(true);
-
+        panelImages.SetActive(false);
+        buttonMenu.SetActive(false);
     }
 }

@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 29287819}
   - component: {fileID: 29287818}
   - component: {fileID: 29287817}
-  - component: {fileID: 29287816}
   - component: {fileID: 29287815}
+  - component: {fileID: 29287820}
   m_Layer: 5
   m_Name: ConceptBtn
   m_TagString: Untagged
@@ -181,18 +181,6 @@ MonoBehaviour:
   img3: {fileID: 1028522809}
   img4: {fileID: 1328913965}
   buttonToShow: 1
---- !u!114 &29287816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29287813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5553ac659ea447d4f9da7180a7925cd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &29287817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,8 +225,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 29287816}
-        m_TargetAssemblyTypeName: PlayBtn, Assembly-CSharp
+      - m_Target: {fileID: 29287820}
+        m_TargetAssemblyTypeName: loadScene, Assembly-CSharp
         m_MethodName: loadGameScene
         m_Mode: 1
         m_Arguments:
@@ -287,6 +275,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29287813}
   m_CullTransparentMesh: 1
+--- !u!114 &29287820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29287813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c158f573fbe2da9438c288c4c65db696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: conceptart
 --- !u!1 &62633172
 GameObject:
   m_ObjectHideFlags: 0

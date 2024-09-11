@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class hideBigImage : MonoBehaviour
 {
-    public GameObject BigImage;
+    public GameObject BigImage,panelImgs,buttoMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +19,7 @@ public class hideBigImage : MonoBehaviour
     public void hideImg(){
         BigImage.SetActive(false);
         this.gameObject.SetActive(false);
+        panelImgs.SetActive(true);
+        buttoMenu.SetActive(true);
     }
 }
