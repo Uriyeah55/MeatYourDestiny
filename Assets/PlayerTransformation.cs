@@ -29,15 +29,17 @@ public class PlayerTransformation : MonoBehaviour
         normalShotCtrl = shotCtrls[0];
         transformedShotCtrl = shotCtrls[1];
 
+        Debug.Log("Normal Shot Ctrl: " + (normalShotCtrl != null));
+        Debug.Log("Transformed Shot Ctrl: " + (transformedShotCtrl != null));
+
         // Start with normal shot enabled and transformed shot disabled
-        if (normalShotCtrl != null) normalShotCtrl.StartShotRoutine(); // Start shooting in normal state
-        if (transformedShotCtrl != null) transformedShotCtrl.StopShotRoutine(); // Ensure transformed state shooting is off
+        SwitchToNormalShot();
     }
 
     void Update()
     {
         // Check if the "M" key is pressed once
-        if (Input.GetKeyDown(KeyCode.M))  // Changed to GetKeyDown
+        if (Input.GetKeyDown(KeyCode.M))
         {
             // Check the current state and switch to the other state
             if (isVegState)
@@ -58,14 +60,48 @@ public class PlayerTransformation : MonoBehaviour
     void SwitchToNormalShot()
     {
         // Stop transformed shot and start normal shot
-        if (transformedShotCtrl != null) transformedShotCtrl.StopShotRoutine();
-        if (normalShotCtrl != null) normalShotCtrl.StartShotRoutine();
+        if (transformedShotCtrl != null)
+        {
+            Debug.Log("Stopping Transformed Shot Routine");
+            transformedShotCtrl.StopShotRoutine();
+        }
+        else
+        {
+            Debug.LogError("Transformed Shot Ctrl is null!");
+        }
+
+        if (normalShotCtrl != null)
+        {
+            Debug.Log("Starting Normal Shot Routine");
+            normalShotCtrl.StartShotRoutine();
+        }
+        else
+        {
+            Debug.LogError("Normal Shot Ctrl is null!");
+        }
     }
 
     void SwitchToTransformedShot()
     {
         // Stop normal shot and start transformed shot
-        if (normalShotCtrl != null) normalShotCtrl.StopShotRoutine();
-        if (transformedShotCtrl != null) transformedShotCtrl.StartShotRoutine();
+        if (normalShotCtrl != null)
+        {
+            Debug.Log("Stopping Normal Shot Routine");
+            normalShotCtrl.StopShotRoutine();
+        }
+        else
+        {
+            Debug.LogError("Normal Shot Ctrl is null!");
+        }
+
+        if (transformedShotCtrl != null)
+        {
+            Debug.Log("Starting Transformed Shot Routine");
+            transformedShotCtrl.StartShotRoutine();
+        }
+        else
+        {
+            Debug.LogError("Transformed Shot Ctrl is null!");
+        }
     }
 }
