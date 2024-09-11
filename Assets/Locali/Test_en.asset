@@ -143,6 +143,10 @@ MonoBehaviour:
     m_Localized: Return to menu
     m_Metadata:
       m_Items: []
+  - m_Id: 2260159565643776
+    m_Localized: Concept Art
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
