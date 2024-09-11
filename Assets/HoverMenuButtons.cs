@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class HoverMenuButtons : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject img1,img2,img3,img4;
+    public GameObject img1,img2,img3,img4,img5;
     public int buttonToShow;
 
     // Start is called before the first frame update
@@ -28,24 +28,38 @@ public class HoverMenuButtons : MonoBehaviour,IPointerEnterHandler, IPointerExit
         img2.SetActive(false);
         img3.SetActive(false);
         img4.SetActive(false);
+        img5.SetActive(false);
+
         break;
         case 2:
         img1.SetActive(false);
         img2.SetActive(true);
         img3.SetActive(false);
         img4.SetActive(false);
+        img5.SetActive(false);
+
         break;
         case 3:
         img1.SetActive(false);
         img2.SetActive(false);
         img3.SetActive(true);
         img4.SetActive(false);
+        img5.SetActive(false);
+
         break;
         case 4:
         img1.SetActive(false);
         img2.SetActive(false);
         img3.SetActive(false);
         img4.SetActive(true);
+        img5.SetActive(false);
+        break;
+        case 5:
+        img1.SetActive(false);
+        img2.SetActive(false);
+        img3.SetActive(false);
+        img4.SetActive(false);
+        img5.SetActive(true);
         break;
         }
   

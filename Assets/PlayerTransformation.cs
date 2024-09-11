@@ -10,6 +10,8 @@ public class PlayerTransformation : MonoBehaviour
     // References to UbhShotCtrl components
     private UbhShotCtrl normalShotCtrl;
     private UbhShotCtrl transformedShotCtrl;
+        public ParticleSystem transformEffect;
+
 
     void Start()
     {
@@ -41,6 +43,7 @@ public class PlayerTransformation : MonoBehaviour
         // Check if the "M" key is pressed once
         if (Input.GetKeyDown(KeyCode.M))
         {
+             transformEffect.Play();
             // Check the current state and switch to the other state
             if (isVegState)
             {

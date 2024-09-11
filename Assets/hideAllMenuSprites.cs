@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class hideAllMenuSprites : MonoBehaviour
 {
-    public GameObject img1,img2,img3,img4;
+    public GameObject img1,img2,img3,img4,img5;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +23,7 @@ public class hideAllMenuSprites : MonoBehaviour
         img2.SetActive(false);
         img3.SetActive(false);
         img4.SetActive(false);
+        img5.SetActive(false);
+
     }
 }
