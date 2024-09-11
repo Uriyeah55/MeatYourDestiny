@@ -29,19 +29,19 @@ public class HoverMenuButtons : MonoBehaviour,IPointerEnterHandler, IPointerExit
         img3.SetActive(false);
         img4.SetActive(false);
         break;
-                case 2:
+        case 2:
         img1.SetActive(false);
         img2.SetActive(true);
         img3.SetActive(false);
         img4.SetActive(false);
         break;
-                case 3:
+        case 3:
         img1.SetActive(false);
         img2.SetActive(false);
         img3.SetActive(true);
         img4.SetActive(false);
         break;
-                case 4:
+        case 4:
         img1.SetActive(false);
         img2.SetActive(false);
         img3.SetActive(false);
@@ -54,7 +54,7 @@ public class HoverMenuButtons : MonoBehaviour,IPointerEnterHandler, IPointerExit
 
     public void OnPointerExit(PointerEventData eventData)
     {
-                img1.SetActive(false);
+        img1.SetActive(false);
         img2.SetActive(false);
         img3.SetActive(false);
         img4.SetActive(false);

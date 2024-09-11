@@ -7,9 +7,9 @@ using UnityEngine.Localization.Settings;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TMP_Text scoreT, rankT;
+    public TMP_Text scoreNumbersText, rankT;
 
-    public int totalScore, Sscore = 1000, AScore = 800, BScore = 600, CScore = 400, DScore = 200;
+    public int totalScore, Sscore = 1500, AScore = 1000, BScore = 800, CScore = 600, DScore = 400;
     public string currentRanking = "";
     string rankTextLocalized;
 
@@ -17,14 +17,14 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         // Retrieve localized text for the score key
-        rankTextLocalized = GetLocalizedText("scoreK");
+        //rankTextLocalized = GetLocalizedText("scoreK");
     }
 
     // Update is called once per frame
     void Update()
     {
         // Display localized score text with the total score
-        scoreT.text = rankTextLocalized + ": " + totalScore;
+        scoreNumbersText.text = totalScore.ToString();
         UpdateRanking();
         rankT.text = currentRanking;
 
