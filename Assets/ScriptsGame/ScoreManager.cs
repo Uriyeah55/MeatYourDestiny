@@ -12,6 +12,8 @@ public class ScoreManager : MonoBehaviour
     public int totalScore, Sscore = 1500, AScore = 1000, BScore = 800, CScore = 600, DScore = 400;
     public string currentRanking = "";
     string rankTextLocalized;
+    public GameObject rankLetterImage;
+    public Sprite[] rankSprites;
 
     // Start is called before the first frame update
     void Start()
@@ -37,26 +39,38 @@ public class ScoreManager : MonoBehaviour
         if (totalScore >= Sscore)
         {
             currentRanking = "S";
+    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[5];
+
         }
         else if (totalScore >= AScore)
         {
             currentRanking = "A";
+    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[4];
+
         }
         else if (totalScore >= BScore)
         {
             currentRanking = "B";
+    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[3];
+
         }
         else if (totalScore >= CScore)
         {
             currentRanking = "C";
+    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[2];
+
         }
         else if (totalScore >= DScore)
         {
             currentRanking = "D";
+    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[1];
+
         }
         else
         {
-            currentRanking = "F"; // If score is below DScore, rank is F or some default value.
+            currentRanking = "F"; 
+    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[0];
+
         }
     }
 

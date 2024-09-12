@@ -25,12 +25,7 @@ public class FightCourse : MonoBehaviour
 
     void Update()
     {
-        // Check if health is less than or equal to 3/4 and the first phase hasn't been triggered yet
-        if (healthSystem.currentHealth <= healthSystem.maxHealth * 0.75 && !phase1Triggered)
-        {
-           // phase1Triggered = true;  // Set the flag to true to prevent future triggers
-           // TriggerPhaseTransition(1);  // Call the method to handle the first phase transition
-        }
+
 
         // Check if health is less than or equal to 200 and the second phase hasn't been triggered yet
         if (healthSystem.currentHealth <= healthSystem.maxHealth * 0.60 && !phase2Triggered)
@@ -64,13 +59,6 @@ public class FightCourse : MonoBehaviour
 
         pool.ReleaseAllBullet();
         GetComponent<DialogSetUp>().SwitchDialog();
-       //disableEnemyPhases();
-        if(phaseNumber==2){
-        //GetComponent<DialogSetUp>().dialogState=5;
-       }
-       if(phaseNumber==4){
-        //GetComponent<DialogSetUp>().dialogState=12;
-       }
 
     }
 

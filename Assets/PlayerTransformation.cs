@@ -38,74 +38,62 @@ public class PlayerTransformation : MonoBehaviour
         SwitchToNormalShot();
     }
 
-    void Update()
+  void Update()
+{
+    // Check if the "M" key is pressed once
+    if (Input.GetKeyDown(KeyCode.M) || Input.GetMouseButtonDown(1))
     {
-        // Check if the "M" key is pressed once
-        if (Input.GetKeyDown(KeyCode.M))
+        GetComponent<AudioSource>().Play();
+        transformEffect.Play();
+        
+        // Check the current state and switch to the other state
+        if (isVegState)
         {
-            GetComponent<AudioSource>().Play();
-             transformEffect.Play();
-            // Check the current state and switch to the other state
-            if (isVegState)
-            {
-                animator.SetTrigger("normalToVegg");  // Trigger to switch to "veggie" state
-                isVegState = false;  // Update state
-                SwitchToTransformedShot();
-            }
-            else
-            {
-                animator.SetTrigger("VegToNormal");  // Trigger to switch to "normal" state
-                isVegState = true;  // Update state
-                SwitchToNormalShot();
-            }
+            animator.SetTrigger("normalToVegg");  // Trigger to switch to "veggie" state
+            isVegState = false;  // Update state
+            Debug.Log("Switching to transformed shot");
+            SwitchToTransformedShot();
+        }
+        else
+        {
+            animator.SetTrigger("VegToNormal");  // Trigger to switch to "normal" state
+            isVegState = true;  // Update state
+            Debug.Log("Switching to normal shot");
+            SwitchToNormalShot();
         }
     }
+}
 
-    void SwitchToNormalShot()
+void SwitchToNormalShot()
+{
+    // Stop transformed shot and start normal shot
+    if (transformedShotCtrl != null)
     {
-        // Stop transformed shot and start normal shot
-        if (transformedShotCtrl != null)
-        {
-            Debug.Log("Stopping Transformed Shot Routine");
-            transformedShotCtrl.StopShotRoutine();
-        }
-        else
-        {
-            Debug.LogError("Transformed Shot Ctrl is null!");
-        }
-
-        if (normalShotCtrl != null)
-        {
-            Debug.Log("Starting Normal Shot Routine");
-            normalShotCtrl.StartShotRoutine();
-        }
-        else
-        {
-            Debug.LogError("Normal Shot Ctrl is null!");
-        }
+        Debug.Log("Stopping Transformed Shot Routine");
+        transformedShotCtrl.StopShotRoutine();
     }
 
-    void SwitchToTransformedShot()
+    if (normalShotCtrl != null)
     {
-        // Stop normal shot and start transformed shot
-        if (normalShotCtrl != null)
-        {
-            Debug.Log("Stopping Normal Shot Routine");
-            normalShotCtrl.StopShotRoutine();
-        }
-        else
-        {
-            Debug.LogError("Normal Shot Ctrl is null!");
-        }
-
-        if (transformedShotCtrl != null)
-        {
-            Debug.Log("Starting Transformed Shot Routine");
-            transformedShotCtrl.StartShotRoutine();
-        }
-        else
-        {
-            Debug.LogError("Transformed Shot Ctrl is null!");
-        }
+        Debug.Log("Starting Normal Shot Routine");
+        normalShotCtrl.StartShotRoutine();
     }
+}
+
+void SwitchToTransformedShot()
+{
+    // Stop normal shot and start transformed shot
+    if (normalShotCtrl != null)
+    {
+        Debug.Log("Stopping Normal Shot Routine");
+        normalShotCtrl.StopShotRoutine();
+    }
+
+    if (transformedShotCtrl != null)
+    {
+        Debug.Log("Starting Transformed Shot Routine");
+        transformedShotCtrl.StartShotRoutine();
+    }
+}
+
 }
