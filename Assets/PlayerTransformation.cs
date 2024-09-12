@@ -95,5 +95,11 @@ void SwitchToTransformedShot()
         transformedShotCtrl.StartShotRoutine();
     }
 }
+public void ResetTransformation()
+{
+    isVegState = true;  // Reset to the default state
+    SwitchToNormalShot();  // Start with normal shot
+}
+
 
 }

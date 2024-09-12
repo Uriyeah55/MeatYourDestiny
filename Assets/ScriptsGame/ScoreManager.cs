@@ -4,12 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
     public TMP_Text scoreNumbersText, rankT;
 
-    public int totalScore, Sscore = 1500, AScore = 1000, BScore = 800, CScore = 600, DScore = 400;
+    public int totalScore, Sscore = 1500, AScore = 1000, BScore = 800, CScore = 600, DScore = 400,EScore=200;
     public string currentRanking = "";
     string rankTextLocalized;
     public GameObject rankLetterImage;
@@ -18,8 +19,8 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Retrieve localized text for the score key
-        //rankTextLocalized = GetLocalizedText("scoreK");
+        totalScore=0;
+        currentRanking="F";
     }
 
     // Update is called once per frame
@@ -34,45 +35,49 @@ public class ScoreManager : MonoBehaviour
         PlayerPrefs.SetString("MaxRank", currentRanking);
     }
 
-    void UpdateRanking()
+void UpdateRanking()
+{
+    
+    if (totalScore >= Sscore)
     {
-        if (totalScore >= Sscore)
-        {
-            currentRanking = "S";
-    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[5];
-
-        }
-        else if (totalScore >= AScore)
-        {
-            currentRanking = "A";
-    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[4];
-
-        }
-        else if (totalScore >= BScore)
-        {
-            currentRanking = "B";
-    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[3];
-
-        }
-        else if (totalScore >= CScore)
-        {
-            currentRanking = "C";
-    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[2];
-
-        }
-        else if (totalScore >= DScore)
-        {
-            currentRanking = "D";
-    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[1];
-
-        }
-        else
-        {
-            currentRanking = "F"; 
-    rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[0];
-
-        }
+        currentRanking = "S";
+        rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[6];
     }
+    else if (totalScore >= AScore && totalScore < Sscore)
+    {
+        currentRanking = "A";
+        rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[5];
+    }
+    else if (totalScore >= BScore && totalScore < AScore)
+    {
+        currentRanking = "B";
+        rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[4];
+    }
+    else if (totalScore >= CScore && totalScore < BScore)
+    {
+        currentRanking = "C";
+        rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[3];
+    }
+    else if (totalScore >= DScore && totalScore < CScore)
+    {
+        currentRanking = "D";
+        rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[2];
+    }
+    else if (totalScore >= EScore && totalScore < DScore)
+    {
+        currentRanking = "E";
+        rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[1];
+    }
+    else // Covers totalScore < EScore
+    {
+        currentRanking = "F";
+        rankLetterImage.GetComponent<UnityEngine.UI.Image>().sprite = rankSprites[0];
+    }
+    Debug.Log("CURRENT SCORE: " + totalScore + ". RANK:" + currentRanking);
+
+}
+
+
 
     // Method to retrieve the localized text using the key
     string GetLocalizedText(string key)

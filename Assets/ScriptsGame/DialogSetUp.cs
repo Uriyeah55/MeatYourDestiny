@@ -20,7 +20,7 @@ public class DialogSetUp : MonoBehaviour
     public int dialogState = -1;  // To keep track of the current dialog state
     int Xposicio = -2;
     int yposicio = -1;
-
+    public GameObject hpBar;
     void Start()
     {
         pool = GameObject.Find("Pool").GetComponent<UbhObjectPool>();
@@ -90,6 +90,7 @@ public class DialogSetUp : MonoBehaviour
                 // FASE 1
                 player.SetActive(true);
                 enemy.SetActive(true);
+                player.transform.position = new Vector3(Xposicio, yposicio, 0);
 
                 hidePortraitsAndPanel();
                 changeEnemyPhase(1);
@@ -137,6 +138,9 @@ public class DialogSetUp : MonoBehaviour
                 hidePortraitsAndPanel();
                 changeEnemyPhase(2);
                 allowPlayerShootAndMovement();
+                enemy.GetComponent<MoveLeftRight>().speed=3;
+                player.GetComponent<PlayerTransformation>().ResetTransformation();
+
                 dialogueOnCourse = false;
                 break;
 
@@ -145,6 +149,8 @@ public class DialogSetUp : MonoBehaviour
             enemy.GetComponent<UbhShotCtrl>().StopShotRoutineAndPlayingShot();
             pool.ReleaseAllBullet();
             player.SetActive(false);
+                enemy.SetActive(false);
+
             dialogPanel.SetActive(true);
             vegPortrait.SetActive(true);
             meatPortrait.SetActive(true);
@@ -160,12 +166,18 @@ public class DialogSetUp : MonoBehaviour
 
             case 11:
                 // FASE 3
+                enemy.GetComponent<MoveLeftRight>().speed=4;
+
                 audioPhase2.SetActive(false);
                 audioPhase3.SetActive(true);
                 hidePortraitsAndPanel();
                 player.SetActive(true);
+                enemy.SetActive(true);
+
                 allowPlayerShootAndMovement();
                 changeEnemyPhase(3);
+                        player.GetComponent<PlayerTransformation>().ResetTransformation();
+
                 dialogueOnCourse = false;
                 break;
 
@@ -175,6 +187,7 @@ public class DialogSetUp : MonoBehaviour
 
                 pool.ReleaseAllBullet();
                 changeEnemyPhase(0);
+                hpBar.SetActive(false);
                 enemy.GetComponent<UbhShotCtrl>().StopShotRoutineAndPlayingShot();
                 dialogPanel.SetActive(true);
                 vegPortrait.SetActive(true);
