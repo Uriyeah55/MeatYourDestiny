@@ -23,7 +23,6 @@ public class HurtEnemyOnCollision : MonoBehaviour
             Debug.LogError("UbhBullet component not found on the bullet GameObject.");
             return;
         }
-
         // Start a timer to deactivate the bullet after 5 seconds
         Invoke("ReleaseBullet", 5f);
     }
@@ -37,9 +36,7 @@ public class HurtEnemyOnCollision : MonoBehaviour
         {
             Debug.Log("enemy hit");
             healthSystem.TakeDamage(damage);
-        
             manager.GetComponent<ScoreManager>().totalScore+=20;
-
             ReleaseBullet();
         }
 
@@ -50,7 +47,7 @@ public class HurtEnemyOnCollision : MonoBehaviour
         // Check if the pool is set and the bullet is still active
         if (pool != null && bullet != null)
         {
-            pool.ReleaseBullet(bullet);  // Correctly pass the UbhBullet type to the pool
+            pool.ReleaseBullet(bullet);  
         }
         else
         {
@@ -58,7 +55,6 @@ public class HurtEnemyOnCollision : MonoBehaviour
         }
     }
 
-    // Method to be called directly if needed
     private void SelfDestroy()
     {
         ReleaseBullet();

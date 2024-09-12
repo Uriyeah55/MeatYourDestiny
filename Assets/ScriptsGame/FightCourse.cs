@@ -8,7 +8,6 @@ public class FightCourse : MonoBehaviour
     public GameObject enemy;
     public bool transitionPhases;
 
-    private bool phase1Triggered = false;  // Flag to track if the first phase has been triggered
     private bool phase2Triggered = false;  // Flag to track if the second phase has been triggered
     private bool phase3Triggered = false;  // Flag to track if the second phase has been triggered
 
@@ -25,8 +24,6 @@ public class FightCourse : MonoBehaviour
 
     void Update()
     {
-
-
         // Check if health is less than or equal to 200 and the second phase hasn't been triggered yet
         if (healthSystem.currentHealth <= healthSystem.maxHealth * 0.60 && !phase2Triggered)
         {
@@ -52,20 +49,16 @@ public class FightCourse : MonoBehaviour
     private void TriggerPhaseTransition(int phaseNumber)
     {
         
-        // Common logic for phase transitions (disable player movement, shooting, etc.)
         GetComponent<PlayerLimitations>().disablePlayerMovement();
         GetComponent<PlayerLimitations>().disablePlayerShooting();
         GetComponent<DialogSetUp>().dialogueOnCourse = true;
-
         pool.ReleaseAllBullet();
         GetComponent<DialogSetUp>().SwitchDialog();
 
     }
 
-    // Method to handle the initial phase transition logic when enemy is at full health
     private void TriggerInitialPhase()
     {
-
         // Custom logic for the initial phase
         GetComponent<PlayerLimitations>().disablePlayerMovement();
         GetComponent<PlayerLimitations>().disablePlayerShooting();

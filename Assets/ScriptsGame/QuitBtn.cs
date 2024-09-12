@@ -8,12 +8,6 @@ public class QuitBtn : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject hoverPlay,hoverDif,hoverQuit;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
