@@ -10,7 +10,7 @@ public class ScoreManager : MonoBehaviour
 {
     public TMP_Text scoreNumbersText, rankT;
 
-    public int totalScore, Sscore = 1500, AScore = 1000, BScore = 800, CScore = 600, DScore = 400,EScore=200;
+    public int totalScore, Sscore = 1800, AScore = 1200, BScore = 800, CScore = 600, DScore = 400,EScore=200;
     public string currentRanking = "";
     string rankTextLocalized;
     public GameObject rankLetterImage;

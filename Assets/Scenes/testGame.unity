@@ -10330,13 +10330,13 @@ MonoBehaviour:
   scoreNumbersText: {fileID: 124248266}
   rankT: {fileID: 1023749711}
   totalScore: 0
-  Sscore: 1000
-  AScore: 800
-  BScore: 600
-  CScore: 0
-  DScore: 0
+  Sscore: 2000
+  AScore: 1200
+  BScore: 800
+  CScore: 600
+  DScore: 400
   EScore: 200
-  currentRanking: S
+  currentRanking: F
   rankLetterImage: {fileID: 1543716393}
   rankSprites:
   - {fileID: 21300000, guid: c35838c6a3f48a74c8b0a7afe7fa2743, type: 3}
