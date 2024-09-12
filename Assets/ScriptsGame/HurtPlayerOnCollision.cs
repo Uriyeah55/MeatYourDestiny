@@ -7,12 +7,14 @@ using UnityEngine;
 public class HurtPlayerOnCollision : MonoBehaviour
 {
     public UbhObjectPool pool; // Reference to the object pool (should be assigned in the inspector)
-
+    int currentDifficulty;
     private UbhBullet bullet; // Reference to the UbhBullet component
     public GameObject manager,audioHurtManager;
-
+int scoretoSubstract;
     private void Start()
     {
+        currentDifficulty = PlayerPrefs.GetInt("difficulty", 0);
+
         manager=GameObject.Find("MANAGER");
         audioHurtManager=GameObject.Find("PlayerHurtManager");
 
@@ -39,7 +41,18 @@ public class HurtPlayerOnCollision : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             audioHurtManager.GetComponent<AudioSource>().Play();
-            manager.GetComponent<ScoreManager>().totalScore-=10;
+            switch(currentDifficulty){
+                case 1:
+                scoretoSubstract=10;
+                break;
+                case 2:
+                scoretoSubstract=20;
+                break;
+                case 3:
+                scoretoSubstract=50;
+                break;
+            }
+            manager.GetComponent<ScoreManager>().totalScore-=scoretoSubstract;
             if(manager.GetComponent<ScoreManager>().totalScore<0)
             {
                 manager.GetComponent<ScoreManager>().totalScore=0;

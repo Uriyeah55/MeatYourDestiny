@@ -2854,13 +2854,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_initializePoolList:
   - m_bulletPrefab: {fileID: 8796231362936915459, guid: 9e410656e45aa864192bec03b700aa15, type: 3}
-    m_initialPoolNum: 600
+    m_initialPoolNum: 1500
   - m_bulletPrefab: {fileID: 674804724415227701, guid: 4d2f2834610321446a8b2dc225a987fa, type: 3}
-    m_initialPoolNum: 600
+    m_initialPoolNum: 1500
   - m_bulletPrefab: {fileID: 674804724415227701, guid: a874b3eb9e47e4f41ba149f7d3dbb8be, type: 3}
-    m_initialPoolNum: 600
+    m_initialPoolNum: 1500
   - m_bulletPrefab: {fileID: 8796231362936915459, guid: af7620492c7edee4b8d1e1a825079fe7, type: 3}
-    m_initialPoolNum: 600
+    m_initialPoolNum: 1500
 --- !u!4 &1007495799
 Transform:
   m_ObjectHideFlags: 0

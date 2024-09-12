@@ -29,15 +29,15 @@ public class HealthSystem : MonoBehaviour
         // Set maxHealth based on the difficulty level
         if (currentDifficulty == 1)
         {
-            maxHealth = 1000f;
+            maxHealth = 2000f;
         }
         else if (currentDifficulty == 2)
         {
-            maxHealth = 1300f;
+            maxHealth = 2500f;
         }
         else if (currentDifficulty == 3)
         {
-            maxHealth = 2000f;
+            maxHealth = 3500f;
         }
 
         initialized = true; // Mark as initialized
